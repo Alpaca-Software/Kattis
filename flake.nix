@@ -17,13 +17,15 @@
   in {
     devShells."${system}".default = pkgs.mkShell {
       packages = with pkgs; [
+		gcc
+		kotlin
+		nil
         go_1_21
         jdk17
       ];
 
       shellHook = ''
         export GO111MODULE=off
-
 
         echo
         echo --- Go:
@@ -32,6 +34,14 @@
         echo
         echo --- Java:
         java -version
+
+        echo
+        echo --- Kotlin:
+        kotlin version
+
+		echo
+		echo --- GCC:
+		gcc --version
       '';
     };
   };

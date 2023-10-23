@@ -1,0 +1,10 @@
+
+# Java Binaries (Classes).
+/**/*.class
+
+# Kotlin Cache (Build).
+/**/META-INF/
+
+# GCC Binaries (Build).
+/**/*.out
+

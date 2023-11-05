@@ -37,7 +37,7 @@
 
         echo
         echo --- Kotlin:
-        kotlin version
+        kotlin -version
 
 		echo
 		echo --- GCC:
